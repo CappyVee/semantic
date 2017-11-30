@@ -1,0 +1,94 @@
+/* For testing only */
+
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}
+
+.columns {
+  height: 100px;
+  display:flex;
+  align-items:center;
+  justify-content: center;
+}
+
+/* End for testing */
+
+.columns.a {
+
+  width: 35%;
+}
+.b, .c, .d {
+  height: 25px;
+  width: 12%;
+  float:left;
+  margin-right: 10px;
+}
+
+
+
+.e {
+  margin-bottom: 15px;
+  width: 60%;
+  clear:both;
+}
+.f {
+  width: 90%;
+}
+
+.g, .h, .i, .j {
+  height: 300px;
+}
+
+.k {
+  width: 35%;
+}
+
+body > div {
+    margin-bottom: 15px;
+}
+
+.header-right {
+  overflow:auto;
+}
+
+.sub-main {
+  margin-bottom: 40px;
+}
+@media screen and (min-width:  768px) {
+  .header-right {
+    float:right;
+    width:25%;
+  }
+  .header-left {
+    float:left;
+    width:75%;
+  }
+.b, .c, .d {
+  float:right;
+  width:25%
+}
+
+  .e, .f {
+    margin-left: 20px;
+  }
+  .sub-main {
+    width: 48%;
+    float:left;
+    margin-right: 4%;
+  }
+
+  .sub-main:nth-child(even) {
+    margin-right: 0%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .sub-main {
+    width: 22%;
+    margin-right:4%!important;
+  }
+  .sub-main:last-child {
+    margin-right: 0!important;
+  }
+}
